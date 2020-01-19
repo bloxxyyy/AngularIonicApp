@@ -1,0 +1,29 @@
+<app-social-fab></app-social-fab>
+<app-header [title]="'competences'"></app-header>
+<ion-content fullscreen class="ion-padding">
+
+    <ion-item>
+        <ion-text color="dark">
+            <p>Listing all of my competences in related topics to programming,
+                 a bit of info is added of were I used the described competence.</p>
+        </ion-text>
+    </ion-item>
+
+    <ion-list *ngFor="let competenceTypes of competenceList">
+
+        <ion-list-header color="secondary">
+            <ion-text color="tertiary"><h2>{{competenceTypes[0]}}</h2></ion-text>
+        </ion-list-header>   
+
+        <ion-item *ngFor="let competence of competenceTypes[1]">
+            <ion-avatar slot="start">
+                <img src="{{ competence.imgRef }}">
+            </ion-avatar>
+            <ion-label>
+                <h3>{{ competence.name }}</h3>
+                <p>{{ competence.desc }}</p>
+            </ion-label>
+        </ion-item>
+        <ion-item></ion-item>
+    </ion-list>
+</ion-content>

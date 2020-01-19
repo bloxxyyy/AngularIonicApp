@@ -18,7 +18,7 @@ const routes: Routes = [
   },
   {
     path: 'social',
-    loadChildren: () => import('./page/social/social.module').then( m => m.SocialPageModule)
+    loadChildren: () => import('./page/competenties/competenties.module').then( m => m.SocialPageModule)
   }
 ];
 @NgModule({

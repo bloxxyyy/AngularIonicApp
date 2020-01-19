@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SocialPageRoutingModule } from './social-routing.module';
+import { CompetentiesPageRoutingModule } from './competenties-routing.module';
 
-import { SocialPage } from './social.page';
+import { CompetentiesPage } from './competenties.page';
 import { SocialFabModule } from '../../components/social-fab/social.module';
 import { HeadModule } from '../../components/head/head.module';
 
@@ -15,12 +15,12 @@ import { HeadModule } from '../../components/head/head.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    SocialPageRoutingModule,
+    CompetentiesPageRoutingModule,
     HeadModule,
     SocialFabModule
   ],
   declarations: [
-    SocialPage
+    CompetentiesPage
   ]
 })
 export class SocialPageModule {}
