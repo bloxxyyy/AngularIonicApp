@@ -1,0 +1,17 @@
+<div class="fab-container"></div>
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button color="tertiary">
+        <ion-icon name="arrow-dropleft"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="start">
+        <ion-fab-button color="light" (click)="OpenUrlWebsite()">
+            <ion-icon name="desktop"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="light" (click)="OpenUrlLinkedIn()">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="light" (click)="OpenUrlGithub()">
+            <ion-icon name="logo-github"></ion-icon>
+        </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>

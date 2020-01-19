@@ -8,6 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
 import { HeadModule } from '../../components/head/head.module';
+import { SocialFabModule } from '../../components/social-fab/social.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { HeadModule } from '../../components/head/head.module';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    HeadModule
+    HeadModule,
+    SocialFabModule
   ],
   declarations: [
     HomePage

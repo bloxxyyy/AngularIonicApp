@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { SocialPageRoutingModule } from './social-routing.module';
 
 import { SocialPage } from './social.page';
+import { SocialFabModule } from '../../components/social-fab/social.module';
 import { HeadModule } from '../../components/head/head.module';
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HeadModule } from '../../components/head/head.module';
     FormsModule,
     IonicModule,
     SocialPageRoutingModule,
-    HeadModule
+    HeadModule,
+    SocialFabModule
   ],
   declarations: [
     SocialPage
